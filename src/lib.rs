@@ -32,8 +32,8 @@ impl Attributes {
     }
 
     pub fn generate(&self) -> String {
-      format!("{}",TEMPLATE
+      TEMPLATE
                     .replace("<description>", self.description.as_str())
-                    .replace("<packages>", self.pkgs.as_str()))
+                    .replace("<packages>", self.pkgs.as_str())
     }
 }
